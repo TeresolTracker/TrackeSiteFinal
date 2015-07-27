@@ -1,0 +1,227 @@
+{
+  "person": [{
+    "fileLocation": "images/img.jpg",
+    "Name": "Mr.zxc",
+    "Email": "teresol@info.com",
+    "company": "zxc (pvt) ltd",
+    "Address": "Some Street, City"
+  }],
+
+  "results": [
+
+    {
+      "company": {
+        "name": "Atlas Choice",
+        "Number": "MA30",
+        "Model": "2015",
+        "location": {
+          "cat": "eat",
+          "latitude": "30.200000",
+          "longitude": "69.225487"
+        }
+      },
+
+      "carType": {
+        "name": "Compact",
+        "image": "images/car1.png"
+
+      },
+      "carDetails": {
+        "hireDuration": 7,
+        "doors": 2,
+        "airCon": false,
+        "optionalExtras": true,
+        "localTax": true,
+        "unlimitedMileage": true,
+        "depositRequired": true
+      },
+
+      "alerttypes": {
+        "hireDuration": "petrol is empty",
+        "cardoors": "doors are broken",
+        "feul": "limited feul",
+        "color": "car color is not fit"
+      },
+      "geofancing": {
+        "hireDuration": "petrol is empty",
+        "cardoors": "doors are broken",
+        "feul": "limited feul",
+        "color": "car color is not fit"
+      },
+      "mantinance": {
+        "hireDuration": "petrol is empty",
+        "cardoors": "doors are broken",
+        "feul": "limited feul",
+        "color": "car color is not fit"
+      },
+      "sms": {
+        "hireDuration": "petrol is empty",
+        "cardoors": "doors are broken",
+        "feul": "limited feul",
+        "color": "car color is not fit"
+      }
+    },
+
+    {
+      "company": {
+        "name": "Holiday Autos",
+        "Number": "MA30",
+        "Model": "2015",
+        "location": {
+		  "cat": "stay",
+          "latitude": "53.191945",
+          "longitude": "-3.056130"
+        }
+      },
+      "price": {
+        "value": 65.23,
+        "currency": "£"
+      },
+      "carType": {
+        "name": "Intermediate",
+        "image": "images/car6.png"
+      },
+      "carDetails": {
+        "hireDuration": 7,
+        "doors": 4,
+        "airCon": false,
+        "optionalExtras": true,
+        "localTax": true,
+        "unlimitedMileage": true,
+        "depositRequired": true
+      },
+      "alerttypes": {
+        "hireDuration": "petrol is empty",
+        "cardoors": "doors are broken",
+        "feul": "limited feul",
+        "color": "car color is not fit"
+      },
+      "geofancing": {
+        "hireDuration": "petrol is empty",
+        "cardoors": "doors are broken",
+        "feul": "limited feul",
+        "color": "car color is not fit"
+      },
+      "mantinance": {
+        "hireDuration": "petrol is empty",
+        "cardoors": "doors are broken",
+        "feul": "limited feul",
+        "color": "car color is not fit"
+      },
+      "sms": {
+        "hireDuration": "petrol is empty",
+        "cardoors": "doors are broken",
+        "feul": "limited feul",
+        "color": "car color is not fit"
+      }
+    },
+
+    {
+      "company": {
+        "name": "Avis",
+        "Number": "MA30",
+        "Model": "2015",
+        "location": {
+		  "cat": "play",
+          "latitude": "73.205673",
+          "longitude": "-23.024502"
+        }
+      },
+      "price": {
+        "value": 56.23,
+        "currency": "£"
+      },
+      "carType": {
+        "name": "Compact",
+        "image": "images/car5.png"
+      },
+      "carDetails": {
+        "hireDuration": 7,
+        "doors": 2,
+        "airCon": false,
+        "optionalExtras": true,
+        "localTax": true,
+        "unlimitedMileage": true,
+        "depositRequired": true
+      },
+      "alerttypes": {
+        "hireDuration": "petrol is empty",
+        "cardoors": "doors are broken",
+        "feul": "limited feul",
+        "color": "car color is not fit"
+      },
+      "geofancing": {
+        "hireDuration": "petrol is empty",
+        "cardoors": "doors are broken",
+        "feul": "limited feul",
+        "color": "car color is not fit"
+      },
+      "mantinance": {
+        "hireDuration": "petrol is empty",
+        "cardoors": "doors are broken",
+        "feul": "limited feul",
+        "color": "car color is not fit"
+      },
+      "sms": {
+        "hireDuration": "petrol is empty",
+        "cardoors": "doors are broken",
+        "feul": "limited feul",
+        "color": "car color is not fit"
+      }
+    },
+
+    {
+      "company": {
+        "name": "Honda",
+        "Number": "MA30",
+        "Model": "2015",
+        "location": {
+		  "cat": "shop",
+          "latitude": "53.205673",
+          "longitude": "-33.024502"
+        }
+      },
+      "price": {
+        "value": 56.23,
+        "currency": "£"
+      },
+      "carType": {
+        "name": "Compact",
+        "image": "images/car4.png"
+      },
+      "carDetails": {
+        "hireDuration": 7,
+        "doors": 2,
+        "airCon": false,
+        "optionalExtras": true,
+        "localTax": true,
+        "unlimitedMileage": true,
+        "depositRequired": true
+      },
+      "alerttypes": {
+        "hireDuration": "petrol is empty",
+        "cardoors": "doors are broken",
+        "feul": "limited feul",
+        "color": "car color is not fit"
+      },
+      "geofancing": {
+        "hireDuration": "petrol is empty",
+        "cardoors": "doors are broken",
+        "feul": "limited feul",
+        "color": "car color is not fit"
+      },
+      "mantinance": {
+        "hireDuration": "petrol is empty",
+        "cardoors": "doors are broken",
+        "feul": "limited feul",
+        "color": "car color is not fit"
+      },
+      "sms": {
+        "hireDuration": "petrol is full",
+        "cardoors": "4 doors",
+        "feul": "limited feul",
+        "color": "car color is  fit"
+      }
+    }
+  ]
+}

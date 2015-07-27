@@ -1,0 +1,4 @@
+[{"name":"Hotel Awesome","url":"http://www.google.com","place":"100 Awesome Street","ltt":30.200000,"lgt":69.225487,"cat":"eat"},
+{"name":"Art Theatre","url":"http://www.google.com","place":"100 Metropolitan Avenue","ltt":40.822000,"lgt":71.485899,"cat":"play"},
+{"name":"Sketchy Motel","url":"http://www.google.com","place":"100 Seedy Lane","ltt":40.500000,"lgt":69.520000,"cat":"stay"},
+{"name":"Boutique Shop","url":"http://www.google.com","place":"100 Vintage Avenue","ltt":19.000000,"lgt":72.90000,"cat":"shop"}]

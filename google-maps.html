@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+
+<head>
+	<title>Tracker</title>
+	<meta charset="utf-8"/>
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/build.css" />
+	<link rel="stylesheet" type="text/css" href="css/trackers.css">
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script>
+	<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn-history/r358/trunk/infobox/src/infobox.js"></script>
+
+
+	<!-- <script src="map.js"></script> -->
+</head>
+
+<body data-ng-controller="carHireController as ctrl" class="container-fluid">
+	<!-- HEADER SECTION START-->
+	<header>
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="header">
+				<div class="container-fluid">
+					<ul class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar-header">
+						<a href="#">
+							<img src="images/TeresolLogo.jpg" alt="Tlogo" />
+						</a>
+						&nbsp;&nbsp;
+						<a href="#">
+							<img src="images/tracker_menu.png" alt="Tlogo" />
+						</a>
+					</ul>
+
+					<ul class="nav navbar-nav  navbar-right">
+
+						<li><a href="index.html"> Home</a></li>
+						<li><a href="google-maps.html"> Maps </a></li>
+						<li><a href="#"> Reports </a></li>
+						<li>
+							<a href="#">
+								<img src="images/phone.png">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/camera.png">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/setting.png">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								<img src="images/lock.png">
+							</a>
+							<ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+								<li>
+									<div>
+										<table ng-controller="UserController">
+											<tr ng-repeat="data in user.person">
+
+												<td>
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+													<img ng-src="{{data.fileLocation}}" width="80px" height="80px" />
+												</td>
+												<td class="accountdetail"></td>
+												<td>
+													<h3 class="name">{{data.Name}}</h3>
+													<h5>{{data.Email}}</h5>
+													<h5 class="detail">{{data.company}}</h5>
+													<h5>{{data.Address}}</h5>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</li>
+
+								<li role="separator" class="divider"></li>
+								<li class="user-footer">
+									<div class="col-lg-12">
+										&nbsp;&nbsp;
+										<button class="btn btn-default btn-flat">Account</button>
+										<button class="btn btn-default btn-primary">Log out</button>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- HEADER SECTION END-->
+
+	<div class="row dashboard_div">
+		<div class="col-xs-1">
+			<h3>&nbsp;Dashboard</h3>
+		</div>
+		<div class="sos">
+			<a href="#">
+				<img src="images/sos.png">
+			</a>
+		</div>
+
+	</div>
+	<!-- //////////////MENU////////////// -->
+
+	</br>
+	<div class="row">
+		<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12" ng-repeat="result in ctrl.results">
+			<div class="tile-stats" style="color: #FFF; background-color:{{ctrl.backgroundColor($index)}} !important; border-color: {{ctrl.backgroundColor($index)}};">
+				<table>
+					<tr>
+						<td class="accountImg">
+							<img src="{{result.carType.image}}" width="80px" height="80px">
+						</td>
+						<td class="accountdetail"></td>
+						<td>
+							<div>
+								<table>
+									<tr>
+										<td>
+											<h4>Name: {{result.company.name}}</h4>
+											<h5>Number: {{result.company.Number}}</h5>
+											<h5>Model: {{result.company.Model}}</h5>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<input type="checkbox" class="checkbox" ng-model="ctrl.search" ng-true-value="{{$index}}" ng-false-value="" />
+
+				<!--
+				ng-repeat have some special variable in it's $scope.
+				You can read more here https://docs.angularjs.org/api/ng/directive/ngRepeat
+				-->
+
+			</div>
+		</div>
+	</div>
+	<!-- //////////////////////////////////////MENU END////////////////////////////////////////////////////// -->
+	<hr>
+	
+			
+				<center>
+				<!-- directive here -->
+				<div id="map" my-car-map selected="ctrl.results[ctrl.search]"></div>
+				</center>
+		
+		
+	
+	<br />
+	<div class="col-xs-12">
+		<center>
+			<h5>Copyright Teresol (Pvt) &copy; all rights reserved 2000-2015</h5>
+		</center>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+
+	<script src="angular/testApp.js"></script>
+	
+	<!--  <script type="text/javascript">
+			$(function(){
+				$(".checkbox").click(function(){
+					if($(this).hasClass("checked")){
+						$(this).parent().find(".darkClass").remove();
+						$(this).removeClass("checked");
+					}else{
+						$(this).parent().append("<div class='darkClass'></div>")
+						$(this).addClass("checked");
+					}
+				});
+			});
+		</script>  -->
+	<script src="js/bootstrap.min.js"></script>
+	</body>
+	</html>

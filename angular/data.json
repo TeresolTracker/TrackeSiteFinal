@@ -1,0 +1,45 @@
+{
+
+"person": [
+{
+"fileLocation": "images/img.jpg",
+"Name": "Mr.zxc",
+"Email": "teresol@info.com",
+"company": "zxc (pvt) ltd",
+"Address": "Some Street, City"
+}
+],
+
+"car1": [
+{
+"Name":"Honda",
+"Number":"MA30",
+"Model":"2015"
+}
+],
+
+"car2": [
+{
+"Name":"Mehran",
+"Number":"MA30",
+"Model":"2015"
+}
+],
+
+"car3": [
+{
+"Name":"Civic",
+"Number":"MA30",
+"Model":"2015"
+}
+],
+
+"car4": [
+{
+"Name":"Suzuki",
+"Number":"MA30",
+"Model":"2015"
+}
+]
+
+}
